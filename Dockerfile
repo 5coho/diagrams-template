@@ -1,11 +1,11 @@
 FROM python:3.12-slim-bullseye
 
-WORKDIR /app
-
 RUN apt-get update && apt-get install -y gcc graphviz
+
+WORKDIR /app
 
 COPY . .
 
-RUN pip install -r requirements.txt
+RUN pip install -r src/requirements.txt
 
-CMD ["python", "main.py"]
+CMD ["python", "src/main.py"]
