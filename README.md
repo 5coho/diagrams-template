@@ -14,6 +14,6 @@ Python application to generate diagrams using Mingrammer and Graphviz
  `docker run --rm -v .:/app diagrams`
 
  - Generated diagram PNGs go into the `./diagrams` directory
- - Modify/create new diagrams in `./src`, example diagrams included
+ - Modify/create new diagram code in `./src`, example diagrams included
  - Be sure to call new diagrams in `main.py`
  - Mingrammer documentation can be found here: https://diagrams.mingrammer.com/docs/getting-started/installation
