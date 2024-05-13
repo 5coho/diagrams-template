@@ -5,11 +5,11 @@ Python application to generate diagrams using Mingrammer and Graphviz
  - Docker
 
 ## Running Locally
- - Build the docker image:
+ - Build the Docker image:
 
  `docker build -t diagrams .`
  
- - Run the image:
+ - Run the Docker image:
 
  `docker run --rm -v .:/app diagrams`
 

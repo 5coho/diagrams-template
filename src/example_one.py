@@ -12,11 +12,18 @@ def example_one(diagram_name: str, path: str = "diagrams") -> None:
         path (str, optional): File path to where diagrams get sent. Defaults to "diagrams".
     """
 
+    graph_attr = {
+        "fontsize": "16",
+        "bgcolor": "white",
+        "pad": "0.5"
+    }
+
     with Diagram(
         diagram_name,
         show=False,
         outformat=["png"],
         filename=f"{path}/{diagram_name}",
+        graph_attr=graph_attr,
     ):
         dns = Route53("dns")
         web = ECS("service")
