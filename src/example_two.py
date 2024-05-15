@@ -22,8 +22,8 @@ def example_two(diagram_name: str, path: str = "diagrams") -> None:
     with Diagram(
         diagram_name,
         show=False,
-        outformat=["png"],
-        filename=f"{path}/{diagram_name}",
+        outformat=["png", "jpg", "svg"],
+        filename=f"{path}/{diagram_name}/{diagram_name}",
         graph_attr=graph_attr,
     ):
         source = EKS("k8s source")
